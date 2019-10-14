@@ -42,7 +42,7 @@ This assumes you are running macOS (OS X) or a Unix-like system (Linux, *BSD, et
   * As stated above, place your source file(s) in the working directory's `src` subdirectory and execute
   
   ```sh
-  spago build -- -g corefn && psgo
+  spago build --purs-args "-g corefn" && psgo
   ```
 
   * This will generate the Go source tree for your program and then build an executable binary. The resulting executable will be in your working directory and will be named `Main`. The generated source files will be under `output/`.
